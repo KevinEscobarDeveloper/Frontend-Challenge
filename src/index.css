@@ -269,7 +269,7 @@ body {
 }
 
 .columns h1 {
-  font-size: clamp(2vh, 2vw, 5vh);
+  font-size: clamp(14px, 28px, 33px);
 }
 
 .column-body {
@@ -279,7 +279,7 @@ body {
 
 .column-body p {
   width: 70%;
-  font-size: 14px;
+  font-size: clamp(11px, 14px, 16px);
   text-align: start;
 }
 
@@ -332,7 +332,7 @@ body {
   .columns ul li {
     list-style: none;
     margin-bottom: 19px;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .social-media {
