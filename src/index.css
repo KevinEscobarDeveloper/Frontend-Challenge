@@ -269,7 +269,7 @@ body {
 }
 
 .columns h1 {
-  font-size: clamp(14px, 28px, 33px);
+  font-size: 28px;
 }
 
 .column-body {
@@ -321,9 +321,32 @@ body {
 }
 
 @media (max-width: 700px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    gap: 10px;
+    background: #FD9255;
+  }
+ .calculator-text p{
+  text-align: justify;
+  width: 80%;
+ }
+
+  .nav li {
+    padding: 2px;
+  }
+
+  .image-home {
+    height: 50%;
+  }
+  
+
   .background-footer {
     width: 100%;
-    height: 500px;
+    height: 600px;
   }
   .columns h1 {
     font-size: 15px;
@@ -343,6 +366,19 @@ body {
 
   .social-media img {
     width: 15%;
+  }
+  .column-body p {
+    width: 70%;
+    font-size: 11px;
+    text-align: start;
+  }
+  .content-columns {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-top: 80px;
+    margin-left: 7px;
+  
   }
 
   .card-group input {
