@@ -155,6 +155,11 @@ body {
   height: 30px;
 }
 
+.counter{
+  display: flex;
+  justify-content: center;
+}
+
 .button-group {
   display: flex;
   justify-content: space-between;
@@ -254,8 +259,6 @@ body {
 
 }
 
-
-
 .columns {
   width: 100%;
   height: 100%;
@@ -304,7 +307,6 @@ body {
 
 .whatsaap
 {
-  
   width: 80%;
 }
 
@@ -332,6 +334,27 @@ body {
   .social-media img{
     width: 15%;
   }
- 
+  .card-group input {
+    width: auto;
+  }
+  .summary .card {
+    
+    display: flex;
+    justify-content: centers;
+    background: #F9F9F9;
+    margin-top: 30px;
+  }
+  .cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
   
 }

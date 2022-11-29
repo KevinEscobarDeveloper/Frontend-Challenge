@@ -84,9 +84,10 @@ export const Items = () => {
                 <h1 className="title">{item.name}</h1>
                 </div>
                 {countersData.map((data) => {
+                  
                   {if (item.id === data.id){
                     return (
-                      <div  key={data.id}>
+                      <div  key={data.id} className="counter">
                         <button
                           className="less"
                           onClick={(e) => {
