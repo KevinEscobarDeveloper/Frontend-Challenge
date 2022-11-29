@@ -1,7 +1,8 @@
 import './App.css'
+import { Footer } from './components/layout/Footer'
 import { Nav } from './components/layout/Nav'
 import { MainContent} from './components/MainContent'
-import { Summary } from './components/Summary'
+
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       <Nav/>
       <MainContent/>
-      
+      <Footer/>
     </div>
   )
 }
