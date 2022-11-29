@@ -326,7 +326,7 @@ body {
     height: 500px;
   }
   .columns h1 {
-    font-size: clamp(1vh, 2vw, 5vh);
+    font-size: clamp(1vh, 1vw, 3vh);
   }
 
   .columns ul li {
