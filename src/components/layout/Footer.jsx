@@ -12,22 +12,27 @@ export const Footer = () => {
       <footer>
         <div className="columns">
           <div className="content-columns">
-          <div >
+            <div className="header-column">
             <img src={home} className="image-home" />
+            </div>
+            <div className="column-body">
             <p>
               It is a long established fact that a reader will be distracted by
               the readable content of a page whenters.
             </p>
-            <div >
-              <img src={twitter} className="image-home" />
-              <img src={facebook} className="image-home" />
-              <img src={instagram} className="image-home" />
+            <div className="social-media">
+              <img src={twitter}  />
+              <img src={facebook} />
+              <img src={instagram}  />
             </div>
           </div>
           </div>
   
           <div className="content-columns">
+          <div className="header-column">
             <h1>About us</h1>
+            </div>
+            <div className="column-body">
             <ul>
               <li>About</li>
               <li>Privacy & Policy</li>
@@ -35,31 +40,40 @@ export const Footer = () => {
               <li>Faq</li>
             </ul>
        
+          </div>
           </div>
     
           <div className="content-columns">
-            <h1>About us</h1>
+          <div className="header-column">
+            <h1>Navigate</h1>
+            </div>
+            <div className="column-body">
             <ul>
-              <li>About</li>
-              <li>Privacy & Policy</li>
-              <li>Terms & Conditions</li>
+              <li>How we work</li>
+              <li>Services</li>
               <li>Faq</li>
+              <li>Contact</li>
+              <li>Free Quote</li>
             </ul>
 
           </div>
+          </div>
        
           <div className="content-columns">
+          <div className="header-column">
             <h1>Contact us</h1>
+            </div>
+            <div className="column-body">
             <ul>
               <li>Ricardo Margain 444</li>
               <li>Call: +52 81 1234 5678</li>
-              <li>Terms & Conditions</li>
-              <li>Faq</li>
+              <li>Email: info@challenge.com</li>
             </ul>
             <div>
             <img src={whatsaap} className="whatsaap" />
             </div>
             
+          </div>
           </div>
    
         </div>
