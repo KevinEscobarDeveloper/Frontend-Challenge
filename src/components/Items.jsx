@@ -115,10 +115,8 @@ export const Items = () => {
             </div>
           );
         })}
-        ;
-      </div>
-
-      <div className="button-group">
+        
+        <div className="button-group">
         <button onClick={(e) => {
                             clear();
                           }}>Clear</button>
@@ -126,6 +124,9 @@ export const Items = () => {
                             calculate();
                           }}>Calculate</button>
       </div>
+      </div>
+
+     
 
       <Summary
         SummaryData = {SummaryData}
