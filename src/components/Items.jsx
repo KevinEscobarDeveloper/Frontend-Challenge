@@ -6,6 +6,7 @@ import { Summary } from "./Summary";
 export const Items = () => {
   const [countersData, setCountersData] = useState([]);
   const [SummaryData, setSummaryData] = useState({total_items : 0, total_m2: 0, subtotal: 0,tax: 0, total: 0, due_today: 0});
+  const [flag, setFlag] = useState(0);
 
   const incrementCounter = (id) => {
     const updatedCounters = countersData.map((data) => {
@@ -13,6 +14,16 @@ export const Items = () => {
       return { ...data, value: data.value + 1 };
     });
     setCountersData(updatedCounters);
+    setFlag(1);
+  };
+  const clear = () => {
+    const updatedCounters = countersData.map((data) => {
+     
+      if (data.value === 0) return data;
+      return { ...data, value: 0 };
+    });
+    setCountersData(updatedCounters);
+    setFlag(1);
   };
 
 
@@ -52,6 +63,15 @@ export const Items = () => {
     });
     setCountersData(data);
   }, []);
+
+  // replaces method calculate with on click
+  useEffect(() => {
+    calculate();
+    setFlag(0)
+  }, [flag]);
+
+  
+
 
   return (
     <>
@@ -98,7 +118,9 @@ export const Items = () => {
       </div>
 
       <div className="button-group">
-        <button>Clear</button>
+        <button onClick={(e) => {
+                            clear();
+                          }}>Clear</button>
         <button onClick={(e) => {
                             calculate();
                           }}>Calculate</button>
